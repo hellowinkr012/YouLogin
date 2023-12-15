@@ -1,1 +1,18 @@
 
+:root {
+    /* Dimension variables */
+    --width-1 :2.5em;
+    --width-2 :1.255em;
+    --width-3 :0.62em;
+
+    /* Color variables */
+    --color-1:blue;
+    --color-2:rgb(3, 3, 191);
+    --color-3:rgb(1, 1, 128);
+    --color-4:rgb(2, 2, 66);
+    --color-5:rgb(1, 1, 16);
+    --color-2-light:rgb(53, 53, 245);
+    --color-3-light:rgb(130, 130, 244);
+    --color-4-light:rgb(197, 197, 248);
+    --color-5-light:rgb(237, 237, 244);
+}
