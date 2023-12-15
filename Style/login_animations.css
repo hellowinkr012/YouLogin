@@ -1,0 +1,48 @@
+@keyframes pop-out-bottom {
+    100% {
+        transform: scale(10);
+        opacity: 100%;
+    }
+}
+@keyframes pop-in-bottom {
+    100% {
+        transform: scale(1);
+        opacity: 0%;
+    }
+}
+@keyframes pop-out-bottom-100 {
+    75% {
+        opacity: 100%;
+    }
+    100% {
+        transform: scale(17.5);
+        opacity: 50%;
+    }
+}
+
+.pop-out-1::before {
+    animation: pop-out-bottom 1s linear 0s forwards;
+}
+.pop-in-1::before {
+    animation: pop-in-bottom 1s linear 0s forwards;
+}
+.pop-out-1::after {
+    animation: pop-out-bottom-100 1s linear 0s forwards;
+}
+.pop-in-1::after {
+    animation: pop-in-bottom 1s linear 0s forwards;
+}
+.slide-up-2 {
+    animation: slide-up-front  1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s 1 forwards ;
+}
+
+@keyframes  slide-right {
+    100% {
+        transform: translate(0%,100%);
+    }
+}
+@keyframes  slide-up-front {
+    100% {
+        transform: translate(0%,0%);
+    }
+}
