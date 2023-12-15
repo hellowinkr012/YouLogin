@@ -1,0 +1,154 @@
+
+/* Global changes */
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body {
+    background: white;
+}
+button {
+    outline: none;
+    border: none;
+}
+input {
+    outline: none;
+    border: none;
+}
+/* DISPLAY PROPERTY */
+.d-flex {
+    display: flex;
+}
+.d-center {
+    justify-content: center;
+    align-items: center;
+}
+.column { flex-direction: column; }
+.row { flex-direction: row; }
+
+/* SPACE PROPERTY */
+.full-h {height: 100%;}
+.full-w {width:100%;}
+.page-h {height: 100vh;}
+.page-w  {width: 100vw;}
+.w-25 {width: 25%;}
+.w-50 {width: 50%;}
+
+/* FLEX PROPERTIES JUSTIFY */
+.j-center {justify-content: center;}
+.j-between {justify-content: space-between;}
+.j-around {justify-content: space-around;}
+.j-left { justify-content: left; }
+
+/* FONT */
+.great-vibes-fonts {
+    font-family: 'Great Vibes', cursive;
+}
+.kaushan-script-fonts {
+    font-family: 'Kaushan Script', cursive;
+}
+.open-sans-fonts {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* BORDER PROPERTY */
+.border-r-1 { border-radius: 1%; }
+.border-r-2 { border-radius: 2%; }
+.border-r-5 { border-radius: 4.55%; }
+.border-r-10 { border-radius: 8%; }
+.border-2 { border: 2px solid transparent;}
+.border-r-full{ border-radius: 100px ;}
+.border-none {border: 0px solid white ;}
+
+/* Position PROPERTIES */
+.p-relative {position: relative;}
+.p-absolute {position: absolute;}
+
+.m-3 {margin: var(--width-3); }
+
+
+/* PADDING */
+.p-3 {padding: var(--width-3);}
+
+/* OVERFLOW PROPERTIES  */
+.overflow-hidden {overflow: hidden;}
+.overflow-x-hidden {overflow-x: hidden;}
+.overflow-y-hidden {overflow-y:  hidden;}
+
+/* TRANSITIONS Property*/
+.timing-ease-in {transition-timing-function:ease-in;}
+.timing-ease-out {transition-timing-function:ease-out ; }
+.timing-ease-in-out  {transition-timing-function:ease-in-out ;}
+
+.tr-1 {transition: 0.15s 0s linear;}
+.tr-2 {transition: 0.25s 0s linear;}
+.tr-4 {transition: 0.45s 0s linear;}
+
+.before-full::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    left: 0px;
+    width: 100%;
+}
+.after-full::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    left: 0px;
+    width: 100%;
+}
+
+/* RIGHT CORNER LOGIN BUTTON STYLE */
+#login-button {
+    align-self:flex-end;
+    padding: var(--width-3);
+    background-color: var(--color-2-light);
+    z-index: 2;
+}
+#login-button:hover {
+    background-color: var(--color-2-light);
+    border-color: var(--color-2);
+    border-bottom-left-radius: 55% ;
+}
+
+/* HOVER EFFECT AFTER LOGIN BUTTON */
+.hover-bubbles::before,.hover-bubbles::after {
+    content: "";
+    position: absolute;
+    width: 10vw;
+    height: 10vw;
+    top: 0px;
+    left: 0px;
+    background: var(--color-2-light);
+    transition: 0.5s 0s ease-in-out;
+    opacity: 0%;
+    z-index: -1;
+    border-radius: 100%;
+} .hover-bubbles::after {
+    background: var(--color-3-light);
+    z-index: -2;
+}
+#login-container form input[type="email"], input[type="password"] {
+    background: var(--color-3);
+    color: var(--color-5-light);
+}
+
+#login-container form input[type="email"]:focus, input[type="password"]:focus {
+    border-color:var(--color-4);
+}
+#login-container form input[type="submit"]:focus {
+    border-color: var(--color-5);
+}
+#login-container form  input[type="submit"] {
+    background: var(--color-4-light);
+    border: 2px solid transparent;
+    color: var(--color-3);
+    transition: 0.15s 0s ease-in;
+}
+#login form div label {
+    display: none;
+}
